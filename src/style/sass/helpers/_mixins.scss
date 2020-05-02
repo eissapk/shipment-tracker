@@ -1,0 +1,45 @@
+// reset Margin & Padding
+@mixin MarPad {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// body styling
+@mixin body {
+    font: {
+        family: $font;
+        weight: normal;
+    }
+
+    letter-spacing: 0.4px;
+    background-color: $white;
+    color: $textColor;
+}
+
+// btn focus
+@mixin btnFocus {
+    outline: none;
+    box-shadow: 0 0 0 2px $mainButter;
+    border-radius: $radius;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+// media query
+@mixin tablet {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin sDesk {
+    @media (min-width:992px) {
+        @content;
+    }
+}
+
+@mixin lDesk {
+    @media (min-width:1200px) {
+        @content;
+    }
+}

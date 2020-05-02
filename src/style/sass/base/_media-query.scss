@@ -1,0 +1,42 @@
+@import "../helpers/variables";
+@import "../helpers/functions";
+@import "../helpers/mixins";
+
+/* header */
+header {
+    @include tablet {
+        form {
+            width: 650px;
+        }
+    }
+}
+
+/* phase wrapper */
+#phasesWrapper {
+    @include tablet {
+        margin-top: 110px;
+
+        .phase {
+            width: (100% / 4);
+
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @include sDesk {
+        width: 950px;
+    }
+
+    @include lDesk {
+        width: 1150px;
+    }
+}
+
+/* phase details */
+#phaseDetail {
+    @include tablet {
+        max-width: 550px;
+    }
+}

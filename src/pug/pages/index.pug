@@ -1,0 +1,75 @@
+//- START HELPERS
+include ../helpers/variables
+include ../helpers/mixins
+//- END HELPERS
+
+//- START SIGNATURE
+include ../components/signature
+//- END SIGNATURE
+doctype
+html(lan="en" dir="ltr")
+    head
+        meta(charset="UTF-8")
+        title Shipment Tracker
+        link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+        meta(name="theme-color" content="#ffffff")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+        //- START SEO
+        include ../components/seo
+        //- END SEO
+
+        //- START CSS
+        include ../components/style
+        //- END CSS
+
+        //- START HTMLSHIV
+        <!-- [if lt IE 9]>
+        script(src="script/html5shiv.js")
+        <![endif] -->
+        //- END HTMLSHIV
+
+    body
+        // start notification
+        div#notify
+            button(type="button", class="closeNotify")
+                <svg class="closeNotify" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.667 386.667">
+                    <path class="closeNotify" d="M386.667 45.564L341.103 0l-147.77 147.77L45.564 0 0 45.564l147.77 147.77L0 341.103l45.564 45.564 147.77-147.77 147.77 147.77 45.564-45.564-147.768-147.77z"/>
+                </svg>
+            p 
+        // end notification
+
+        // !START MAIN WRAPPER
+        main
+            // start nav bar
+            include ../layout/nav
+            // end nav bar
+
+            // start header            
+            include ../layout/header
+            // end header    
+
+            // start phases container
+            #phasesWrapper
+                each val, index in phases
+                    div(class="phase phase-" + index)
+                        div(class="phaseImgCon phaseImgCon-" + index)
+                            img(src="img/phase-" + index + ".svg", alt=val)
+                        p=val
+            // end phases container
+
+            // start tracking details
+            div#phaseDetail
+                h2 tracking details
+                section#phaseDetailInnerCon
+            // end tracking details
+
+        // start footer
+        include ../layout/footer
+        // end footer
+
+        // !END MAIN WRAPPER
+
+        //- START JS
+        include ../components/script
+        //- END JS

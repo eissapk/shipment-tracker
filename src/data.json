@@ -1,0 +1,54 @@
+{
+    "api": [{
+            "order": {
+                "invoiceNo": 1000,
+                "phaseNo": 1,
+                "details": {
+                    "phaseOne": "<li>The item ordered <b>In</b> 2019-01-01 <b>At</b> 10:00</li>",
+                    "phaseTwo": "",
+                    "phaseThree": "",
+                    "phaseFour": ""
+                }
+            }
+        },
+
+        {
+            "order": {
+                "invoiceNo": 2000,
+                "phaseNo": 2,
+                "details": {
+                    "phaseOne": "<li>The item ordered <b>In</b> 2018-05-10 <b>At</b> 09:00</li>",
+                    "phaseTwo": "<li>The item was ready for shipping <b>In</b> 2018-05-11 <b>At</b> 06:40</li>",
+                    "phaseThree": "",
+                    "phaseFour": ""
+                }
+            }
+        },
+
+        {
+            "order": {
+                "invoiceNo": 3000,
+                "phaseNo": 3,
+                "details": {
+                    "phaseOne": "<li>The item ordered <b>In</b> 2017-04-15 <b>At</b> 07:00</li>",
+                    "phaseTwo": "<li>The item was ready for shipping <b>In</b> 2017-04-16 <b>At</b> 06:10</li>",
+                    "phaseThree": "<li>The item sent out for delivery <b>In</b> 2017-04-17 <b>At</b> 03:43</li>",
+                    "phaseFour": ""
+                }
+            }
+        },
+
+        {
+            "order": {
+                "invoiceNo": 4000,
+                "phaseNo": 4,
+                "details": {
+                    "phaseOne": "<li>The item ordered <b>In</b> 2020-03-05 <b>At</b> 5:00</li>",
+                    "phaseTwo": "<li>The item was ready for shipping <b>In</b> 2020-03-06 <b>At</b> 06:00</li>",
+                    "phaseThree": "<li>The item sent out for delivery <b>In</b> 2020-03-07 <b>At</b> 04:43</li>",
+                    "phaseFour": "<li>The item arrived at the destination country <b>In</b> 2020-03-08 <b>At</b> 12:00</li>"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+
+<!--
+___________.___  _________ _________   _____      ____  ________.___.__________
+\_   _____/|   |/   _____//   _____/  /  _  \     \   \/  /\__  |   |\____    /
+|    __)_ |   |\_____  \ \_____  \  /  /_\  \     \     /  /   |   |  /     / 
+|        \|   |/        \/        \/    |    \    /     \  \____   | /     /_ 
+/_______  /|___/_______  /_______  /\____|__  / /\/___/\  \ / ______|/_______ \
+        \/             \/        \/         \/  \/      \_/ \/               \/
+--><!DOCTYPE html>
+<html lan="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Shipment Tracker</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !START SEO-->
+    <meta name="description" content="Track your orders easily.">
+    <meta name="author" content="Eissa Saber">
+    <!-- START SHARE-->
+    <!-- All Websites-->
+    <meta property="og:title" content="Shipment Tracker">
+    <meta property="og:description" content="Track your orders easily.">
+    <meta property="og:image" content="https://eissa.xyz/shipment-tracker/img/thumbnail.jpg">
+    <meta property="og:url" content="https://eissa.xyz/shipment-tracker">
+    <meta property="og:site_name" content="Shipment Tracker">
+    <meta property="og:type" content="website">
+    <!-- Twitter-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Shipment Tracker">
+    <meta name="twitter:description" content="Track your orders easily.">
+    <meta name="twitter:image" content="https://eissa.xyz/shipment-tracker/img/thumbnail.jpg">
+    <!-- END SHARE-->
+    <link href="https://eissa.xyz/shipment-tracker" rel="canonical">
+    <meta name="robots" content="index, follow">
+    <!-- !END SEO-->
+    <!-- *START CSS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&amp;display=swap">
+    <link gs="" rel="stylesheet" href="style/app.css">
+    
+    <!-- *END CSS--><!-- [if lt IE 9]>
+    <script src="script/html5shiv.js"></script><![endif] -->
+  </head>
+  <body>
+    <!-- start notification-->
+    <div id="notify">
+      <button class="closeNotify" type="button"><svg class="closeNotify" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 386.667 386.667">
+<path class="closeNotify" d="M386.667 45.564L341.103 0l-147.77 147.77L45.564 0 0 45.564l147.77 147.77L0 341.103l45.564 45.564 147.77-147.77 147.77 147.77 45.564-45.564-147.768-147.77z">
+</svg>
+      </button>
+      <p> </p>
+    </div>
+    <!-- end notification-->
+    <!-- !START MAIN WRAPPER-->
+    <main>
+      <!-- start nav bar-->
+      <nav><a href="index.html" id="logo"><img src="img/logo.svg" alt="logo"> <span>shipment tracker</span></a></nav>
+      <!-- end nav bar-->
+      <!-- start header            -->
+      <header>
+        <h1>track your order</h1>
+        <p>for testing purposes use these numbers (1000, 2000, 3000, 4000)</p>
+        <form id="form">
+          <input type="text" id="engine" placeholder="Insert order number" autocomplete="off" required pattern="[0-9]{4,}">
+          <button type="submit" id="btn">
+             <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+<path d="M508.875 493.792L353.09 338.005c32.358-35.927 52.245-83.296 52.245-135.34C405.333 90.917 314.417 0 202.667 0S0 90.917 0 202.667s90.917 202.667 202.667 202.667c52.043 0 99.41-19.887 135.34-52.245l155.786 155.786c2.083 2.083 4.813 3.125 7.542 3.125s5.458-1.042 7.542-3.125c4.166-4.167 4.166-10.917-.001-15.083zM202.667 384c-99.98 0-181.333-81.344-181.333-181.333S102.688 21.333 202.667 21.333 384 102.677 384 202.667 302.646 384 202.667 384z">
+
+</svg>
+          </button>
+        </form>
+      </header>
+      <!-- end header    -->
+      <!-- start phases container-->
+      <div id="phasesWrapper">
+        <div class="phase phase-0">
+          <div class="phaseImgCon phaseImgCon-0"><img src="img/phase-0.svg" alt="Ordered"></div>
+          <p>Ordered</p>
+        </div>
+        <div class="phase phase-1">
+          <div class="phaseImgCon phaseImgCon-1"><img src="img/phase-1.svg" alt="Ready for shipping"></div>
+          <p>Ready for shipping</p>
+        </div>
+        <div class="phase phase-2">
+          <div class="phaseImgCon phaseImgCon-2"><img src="img/phase-2.svg" alt="Out for delivery"></div>
+          <p>Out for delivery</p>
+        </div>
+        <div class="phase phase-3">
+          <div class="phaseImgCon phaseImgCon-3"><img src="img/phase-3.svg" alt="Delivered"></div>
+          <p>Delivered</p>
+        </div>
+      </div>
+      <!-- end phases container-->
+      <!-- start tracking details-->
+      <div id="phaseDetail">
+        <h2>tracking details</h2>
+        <section id="phaseDetailInnerCon"></section>
+      </div>
+      <!-- end tracking details-->
+    </main>
+    <!-- start footer-->
+    <footer> 
+      <p>&copy; 2020 All Rights Reserved. <a href="https://eissa.xyz" target="_blank">Eissa Stock</a> </p>
+    </footer>
+    <!-- end footer-->
+    <!-- !END MAIN WRAPPER-->
+    <!-- *START JS-->
+    <script gs="" defer src="script/main.js"></script>
+    <script gs="" defer src="script/header.js"></script>
+    
+    <!-- *END JS-->
+  </body>
+</html>

@@ -1,0 +1,27 @@
+nav {
+    width: 100%;
+    overflow: hidden;
+
+    #logo {
+        float: $floatLeft;
+        margin: 30px 20px;
+        height: 40px;
+        text-decoration: none;
+
+        img {
+            height: 30px;
+            margin-top: 5px;
+            float: $floatLeft;
+        }
+
+        span {
+            line-height: 40px;
+            font-size: 25px;
+            color: $textColor;
+            text-transform: capitalize;
+            padding-left: 10px;
+            float: $floatLeft;
+        }
+
+    }
+}

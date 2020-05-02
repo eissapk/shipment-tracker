@@ -1,0 +1,40 @@
+@import "../helpers/variables";
+@import "../helpers/functions";
+@import "../helpers/mixins";
+
+* {
+    @include MarPad;
+
+    &::before {
+        @include MarPad;
+    }
+
+    &::after {
+        @include MarPad;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+html,
+body {
+    @include MarPad;
+    @include body;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    background-image: linear-gradient(90deg, rgba(106, 17, 203, .8), rgba(39, 85, 163, 0.8)), url('../img/bg.webp');
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 25px;
+}

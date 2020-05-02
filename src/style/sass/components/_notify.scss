@@ -1,0 +1,36 @@
+#notify {
+    position: fixed;
+    bottom: 55px;
+    right: -250px;
+    width: 250px;
+    background-color: rgba($error, 1);
+    padding: 10px 10px 10px 40px;
+    border-radius: $radius;
+    z-index: 1;
+    box-shadow: 0 0 6px 3px rgba(black, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    button {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        box-sizing: content-box;
+        padding: 4px;
+        border: 1px solid $white;
+        border-radius: 50%;
+
+        svg {
+            width: 10px;
+            height: 10px;
+            fill: $white;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        color: $white;
+        user-select: none;
+    }
+}
